@@ -1,1 +1,52 @@
-<p>basics-page works!</p>
+<p-panel class="p-2 " header="Pipes text">
+  <p>
+    Pipes incluidos en angular - usualmente en el commonModule
+  </p> 
+</p-panel>
+
+
+<div class="grid"> 
+    <div class="col-12 md:col-6 lg:col-4"> 
+        <p-card header="upperCase">
+            {{nameLower| uppercase}}
+        </p-card>
+    </div>
+
+    <div class="col-12 md:col-6 lg:col-4">
+        <p-card header="lowerCase">
+            {{nameUpper | lowercase }}
+        </p-card>
+    </div>
+
+    <div class="col-12 md:col-6 lg:col-4">
+        <p-card header="tileCase">
+            {{fullNmae | titlecase }}
+        </p-card>
+    </div>
+
+    <div class="col-12 md:col-6 lg:col-6">
+        <p-card header="Date">
+            <ul>
+                <li>fecha</li>
+                <li>fecha | date</li>
+                <li>fecha | date: 'short'</li>
+                <li>fecha | date: 'long'</li>
+                <li>fecha | date: 'fullDate</li>
+            </ul>
+        </p-card>
+    </div>
+
+    <div class="col-12 md:col-6 lg:col-6">
+        <p-card header="tileCase">
+            <ul>   
+                <li> {{customDate }}</li>             
+                <li> {{customDate | date }}</li>             
+                <li> {{customDate | date: 'short'}}</li>
+                <li> {{customDate | date: 'long'}}</li>
+                <li> {{customDate | date: 'fullDate' }}</li>
+                <li> {{customDate | date: 'shortDate'}}</li>
+                <li> {{customDate | date: 'shortTime'}}</li>
+            </ul>
+        </p-card>
+    </div>
+</div>
