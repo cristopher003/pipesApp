@@ -9,7 +9,7 @@ export class BasicsPageComponent {
 
   public nameLower:string="cristopher";
   public nameUpper:string="CRISTOPHER";
-  public fullNmae:string="CrIsTOphEr";
+  public fullName:string="CrIsTOphEr";
   public customDate:Date = new Date();
 
 }
